@@ -3,6 +3,7 @@
     background-color: #f7f5f2; /* Light coffee background */
     border-radius: 10px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,28 +13,38 @@
 .modal-header {
     border-bottom: none;
     padding-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-title {
-    font-family: 'Poppins', sans-serif; /* Choose a clean, modern font */
+    font-family: 'Poppins', sans-serif; /* Clean, modern font */
     font-size: 24px;
     font-weight: 600;
     color: #5c4033; /* Coffee-brown color */
-    justify-content: center;
-    align-items: center;
 }
 
 .modal-header .close {
     font-size: 24px;
     color: #5c4033; /* Coffee-brown close button */
+    position: absolute;
+    right: 15px;
 }
 
 .modal-body {
+    width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .form-group label {
@@ -43,6 +54,7 @@
 }
 
 .form-control {
+    width: 100%;
     border-radius: 5px;
     border: 1px solid #ddd;
     font-family: 'Poppins', sans-serif;
@@ -67,6 +79,7 @@ button.btn-primary {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 button.btn-primary:hover {
@@ -102,6 +115,10 @@ nav ul li a:hover {
         padding: 15px;
     }
 
+    .modal-title {
+        font-size: 20px;
+    }
+
     .form-control {
         font-size: 14px;
     }
@@ -109,4 +126,20 @@ nav ul li a:hover {
     button.btn-primary {
         font-size: 14px;
     }
+}
+
+/* Style for the select dropdown (role input) */
+.form-control.select {
+    appearance: none;
+    background-color: #f7f5f2;
+    padding-right: 30px; /* Extra space for the dropdown arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%235C4033" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+.form-control.select:focus {
+    border-color: #c37a44;
+    box-shadow: 0 0 8px rgba(195, 122, 68, 0.4);
 }

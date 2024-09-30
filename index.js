@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-app.use("/user",userRouter);
+// app.use("/user",userRouter);
 
 app.get("/home", (req, res) => {
     res.render('index');
