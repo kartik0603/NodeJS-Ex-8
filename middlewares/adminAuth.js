@@ -1,4 +1,4 @@
-const User = require("../model/user.schema");
+// const User = require("../model/user.schema");
 
 const isAdmin = async (req, res, next) => {
   const adminId = req.cookieParser.adminId;

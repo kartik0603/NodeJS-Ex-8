@@ -11,13 +11,11 @@ const {
 const userRouter = Router();
 
 userRouter.get("/", getUsers);
-userRouter.post("/", sendOtp, createUser);
+userRouter.post("/signup",  createUser);
 userRouter.patch("/:id", updateUser);
 userRouter.delete("/:id", deleteUser);
-userRouter.post("/signing", sigining);
+userRouter.post("/signin", sendOtp, sigining);
 
-// userRouter.get("/home", (req, res) => {
-//   res.render("index");
-// });
+
 
 module.exports = userRouter;
