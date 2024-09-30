@@ -1,0 +1,112 @@
+/* Modal background and layout */
+.modal-content {
+    background-color: #f7f5f2; /* Light coffee background */
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-title {
+    font-family: 'Poppins', sans-serif; /* Choose a clean, modern font */
+    font-size: 24px;
+    font-weight: 600;
+    color: #5c4033; /* Coffee-brown color */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header .close {
+    font-size: 24px;
+    color: #5c4033; /* Coffee-brown close button */
+}
+
+.modal-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group label {
+    font-family: 'Poppins', sans-serif;
+    color: #5c4033;
+    font-size: 16px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f7f5f2; /* Light coffee background */
+}
+
+.form-control:focus {
+    border-color: #c37a44; /* Coffee theme highlight */
+    box-shadow: 0 0 8px rgba(195, 122, 68, 0.4); /* Coffee theme shadow */
+}
+
+button.btn-primary {
+    background-color: #c37a44; /* Coffee theme button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.btn-primary:hover {
+    background-color: #b5662f; /* Darker coffee-brown on hover */
+}
+
+.modal-footer {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* Style for the link buttons in the navbar */
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    color: #5c4033;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c37a44; /* Coffee-brown hover */
+}
+
+/* Style adjustments for responsiveness */
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 30px auto;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    button.btn-primary {
+        font-size: 14px;
+    }
+}
