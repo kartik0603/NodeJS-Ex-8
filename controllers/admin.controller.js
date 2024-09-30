@@ -1,5 +1,6 @@
 const User = require("../model/user.schema");
 
+
 const showUsers = async (req, res) => {
   const users = await User.find({ isVerified: true });
   res.remder("dashboard", { users });
@@ -19,7 +20,7 @@ const allowPost = async (req, res) => {
   user.canPost = action === "allow" ? true : false;
   await user.save();
 
-  res.send({ msg: "updated" });
+  res.cookieParser("canPost", canPost, { httpOnly: true, maxAge: 3600000 });
 };
 
 module.exports = { showUsers, allowPost };
