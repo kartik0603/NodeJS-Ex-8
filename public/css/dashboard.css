@@ -1,0 +1,78 @@
+.dashboard-section {
+    padding: 50px 0;
+    background-color: #f7f5f2;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.dashboard-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #5c4033;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th, .users-table td {
+    padding: 15px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: #5c4033;
+    border-bottom: 1px solid #ddd;
+}
+
+.users-table th {
+    background-color: #c37a44;
+    color: white;
+}
+
+.approve-btn, .reject-btn {
+    padding: 8px 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.approve-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.approve-btn:hover {
+    background-color: #45a049;
+}
+
+.reject-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.reject-btn:hover {
+    background-color: #e53935;
+}
+
+.status-approved {
+    color: green;
+    font-weight: bold;
+}
+
+.status-rejected {
+    color: red;
+    font-weight: bold;
+}
